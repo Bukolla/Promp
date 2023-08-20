@@ -1,6 +1,8 @@
 import { IoMdContact } from "react-icons/io";
 import { GiDialPadlock } from "react-icons/gi";
-import { Link } from "react-router-dom"
+import { AiOutlineMail } from "react-icons/ai";
+
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -18,7 +20,16 @@ const Signup = () => {
             </div>
             <input
               className="h-10 w-[240px] border rounded pl-3"
-              placeholder="Email or Phone"
+              placeholder="Username"
+            />
+          </div>
+          <div className="w-[300px] h-12 mt-2 rounded flex justify-center items-center ">
+            <div className="w-10 h-10 rounded bg-teal-600 flex justify-center items-center text-[32px] text-white ">
+              <AiOutlineMail />
+            </div>
+            <input
+              className="h-10 w-[240px] border rounded pl-3"
+              placeholder="Email Address"
             />
           </div>
           <div className="w-[300px] h-12 mt-2 rounded flex justify-center items-center ">
@@ -30,9 +41,7 @@ const Signup = () => {
               placeholder="Password"
             />
           </div>
-          <div className="ml-1 text-teal-600 hover:cursor-pointer hover:scale-[1.05] transition-all pl-2 ">
-            Forgot password?
-          </div>
+
           <div className="mt-4 px-2">
             <button className="w-[280px] h-10 rounded bg-teal-600 text-white text-[18px] hover:scale-[1.05] transition-all">
               Signup

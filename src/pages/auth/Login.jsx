@@ -28,9 +28,12 @@ const Login = () => {
               placeholder="Password"
             />
           </div>
-            <div className="text-teal-600 hover:cursor-pointer hover:scale-[1.05] transition-all mr-[150px]">
+
+          <Link to="/forgot">
+            <div className="text-teal-600 hover:cursor-pointer hover:scale-[1.05] transition-all mr-[160px]">
               Forgot password?
-          </div>
+            </div>
+          </Link>
           <div className="mt-4 px-2">
             <button className="w-[280px] h-10 rounded bg-teal-600 text-white text-[18px] hover:scale-[1.05] transition-all">
               Login
@@ -38,11 +41,11 @@ const Login = () => {
             <div className="flex justify-center items-center mt-3 hover:cursor-pointer ">
               <div>Not a member?</div>
 
-              {/* <Link to="/signup"> */}
-              <div className="ml-1 text-teal-600 hover:scale-[1.05] transition-all ">
-                Signup now
-              </div>
-              {/* </Link> */}
+              <Link to="/signup">
+                <div className="ml-1 text-teal-600 hover:scale-[1.05] transition-all ">
+                  Signup now
+                </div>
+              </Link>
             </div>
           </div>
         </div>
